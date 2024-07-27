@@ -1,0 +1,247 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+
+    /* shake 애니메이션 발생 시 가로 스크롤 생김방지
+        레이아웃 구조 변경 시 다시 고려해야 합니다.
+    */
+    overflow-x : hidden;
+}
+
+a {
+    color : #000;
+    text-decoration : none;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    gap: 900px;
+}
+
+
+.apart-container {
+    position: relative; /* 자식 요소를 상대적으로 배치할 수 있도록 설정 */
+    width: fit-content; /* 컨테이너 크기를 이미지 크기에 맞추기 */
+}
+
+
+.apart {
+    width: 500px;
+    height: 390px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1:
+}
+
+.chicken {
+    width: 250px;
+    height: 150px;
+    left: 400px;
+    top: 50px;
+    position: absolute;
+    z-index: 2;
+}
+
+.camping_img {
+    positon: relative;
+    width: 30%;
+    height: auto;
+}
+
+
+    
+.head {
+    text-align: center;
+}
+
+.thezon_img {
+    position: relative;
+    z-index: -1;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 850px;
+}
+
+/* .arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+} */
+.arrow {
+    display: block;
+    text-align: center;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid black;
+    animation: blink 2s;
+    animation-iteration-count: 2;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.click {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    /* 요소의 성질과 크기 정의 */
+    display : block;
+    width : 95px;
+    height : 95px;
+
+    /* 내부 글자를 박스에 알맞게 조정 */
+    line-height : 100px;
+    text-align : center;
+
+    /* 박스의 테두리를 조정 */
+    border-radius : 50%;
+    border : 2px solid #000;
+
+    /* 박스요소를 부모영역(화면)의 중앙에 오도록 */
+    margin : 10px auto;
+    /* height: 20px; */
+
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+    font-weight: normal;
+    /* transition: color 0.3s, font-weight 0.3s; */
+    /* animation: blink cubic-bezier(0.23, 1, 0.320, 1) infinite; */
+    animation: blink 2s;
+    animation-iteration-count: 2;
+
+}
+
+.click:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+
+.main {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 0 200px;
+    position: absolute;
+    z-index: 1;
+}
+
+.title {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color:#cacded;
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
+    /* animation: shake 2s; */
+}
+
+
+
+.menu_container {
+    margin-top: 100px;
+    margin-left: 500px;
+    grid-column: 3 / 3;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.menu {
+    /* display: flex; */
+    /* justify-content: center; */
+
+    display : block;
+    text-align : center;
+
+    border: 2px solid #cacded; 
+    border-radius: 15px;
+
+    padding: 10px; 
+    /* line-height : 38px; */
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #cacded;
+    /* animation: shake 2s;  */
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(10px);
+    }
+}
+
+.shake{
+    animation : shake 2s ;
+}
+
+.menu:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+.menu_contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    padding: 0 100px;
+    display: flex;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.content {
+    text-align: left;
+    width: 1000px;
+    line-height: 30px;
+}
+
+.thezon_dayimg {
+    width: 1000px;
+    height: auto;
+}
+
+.subdivision {
+    margin-left: 20px;
+}
+
+.bold {
+    font-weight: 550;
+}
+
+hr {
+    border: none;
+    height: 1px; 
+    background-color: #ccc; 
+    margin: 100px 0; 
+}
