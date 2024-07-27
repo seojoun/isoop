@@ -140,7 +140,7 @@ a {
 
 
 .main {
-    margin-top: 50px;
+    margin-top: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
