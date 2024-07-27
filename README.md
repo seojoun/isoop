@@ -23,7 +23,7 @@
         <img class="apart img" src=image/apart_img.jfif><br>
         <img class="chicken img" src=image/chicken.jfif>
       </div>  
-      <img class="camping_img" src=image/thezon_camping.jpg> 
+      
     </div>
     <br>
     <h1 class="head">당신에게 집이란 어떤 의미인가요?</h1>
